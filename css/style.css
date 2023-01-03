@@ -444,6 +444,51 @@ header {
     border-radius: 0.5rem;
 }
 /* ========================================
+            FAQ
+ ========================================*/
+.faqs {
+    text-align: center;
+    margin-top: 5rem;
+}
+.faqs_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background-color: var(--primary);
+    color: var(--normal);
+    text-align: justify;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.faq h4 {
+    font-size: 1.2rem;
+    line-height: 1.23;
+}
+.fa-plus {
+    color: var(--normal);
+    font-size: 1.5rem;
+}
+.faq_icon {
+    font-size: 1.3rem;
+    align-self: flex-start;
+}
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+/* for showing as on click */
+.faq.open p{
+    display: block;
+}
+/* ========================================
             contract
  ========================================*/
 .contract_section {
@@ -658,6 +703,11 @@ footer ul li a:hover{
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
     }
+    .faqs_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
     /* footer */
     .footer_container {
         display: grid;
@@ -718,6 +768,11 @@ footer ul li a:hover{
     .portfoli_card {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+    .faqs_container {
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     .contract_page {
