@@ -796,4 +796,7 @@ footer ul li a:hover{
      .follow {
         padding: 0rem 8rem;
      }
+     .footer_1 p{
+        margin-right: 0rem;
+    }
  }
